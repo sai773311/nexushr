@@ -21,22 +21,22 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
           cache: npm
           cache-dependency-path: nexushr/frontend/package-lock.json
 
-      - name: Install dependencies
+      - name: Install Dependencies
         working-directory: nexushr/frontend
         run: npm ci
 
-      - name: Build frontend
+      - name: Build Frontend
         working-directory: nexushr/frontend
         run: npm run build
 
-      - name: Upload Pages artifact
+      - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: nexushr/frontend/dist
