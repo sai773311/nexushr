@@ -1,0 +1,19 @@
+# Java and Maven build output
+**/target/
+
+# Frontend dependencies and build output
+**/node_modules/
+**/dist/
+
+# Local IDE and environment files
+.idea/
+.vscode/
+*.iml
+.env
+.env.*
+!.env.example
+
+# Local logs and OS files
+*.log
+Thumbs.db
+.DS_Store

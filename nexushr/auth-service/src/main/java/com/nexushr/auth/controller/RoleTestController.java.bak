@@ -1,0 +1,23 @@
+package com.nexushr.auth.controller;
+
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+@RequestMapping("/api")
+public class RoleTestController {
+
+    @GetMapping("/employee/dashboard")
+    public String employeeDashboard() {
+        return "Employee Dashboard";
+    }
+
+    @GetMapping("/manager/dashboard")
+    public String managerDashboard() {
+        return "Manager Dashboard";
+    }
+
+    @GetMapping("/admin/dashboard")
+    public String adminDashboard() {
+        return "Admin Dashboard";
+    }
+}
