@@ -4,7 +4,7 @@ React + Vite client for the existing NexusHR Spring Boot API.
 
 ## Run the complete project
 
-1. Start MySQL and create the database configured in `auth-service/src/main/resources/application.yml`:
+1. Start MySQL and create the database configured in `backend/src/main/resources/application.yml`:
 
    ```sql
    CREATE DATABASE nexushr;
@@ -13,7 +13,7 @@ React + Vite client for the existing NexusHR Spring Boot API.
 2. From `nexushr`, start the backend:
 
    ```powershell
-   mvn spring-boot:run -pl auth-service -am
+   mvn spring-boot:run -pl backend -am
    ```
 
 3. In a second terminal, start the frontend:
